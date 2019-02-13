@@ -2,9 +2,9 @@ var path = require("path");
 
 module.exports = {
     mode: "production",
-    target: "node",
     entry: "./src/JSONBigNumber.js",
     output: {
+        globalObject: "this",
         filename: "JSONBigNumber.min.js",
         path: path.resolve(__dirname, "dist"),
         library: "JSONBigNumber",
