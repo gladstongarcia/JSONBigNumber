@@ -2,6 +2,7 @@ var path = require("path");
 
 module.exports = {
     mode: "production",
+    target: "node",
     entry: "./src/JSONBigNumber.js",
     output: {
         filename: "JSONBigNumber.min.js",
